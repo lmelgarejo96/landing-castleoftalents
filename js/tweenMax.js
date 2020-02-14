@@ -18,48 +18,48 @@ TweenMax.to(".init", 4, {
 });
 
 TweenMax.to(".ring", 4, {
-    delay: 7.5,
-    top: "-300%",
+    delay: 7,
+    top: "-500%",
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".logo", 3, {
-    delay: 8.4,
+    delay: 7.4,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".nav-link", 3, {
-    delay: 8.4,
+    delay: 7.4,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 });
 
 TweenMax.from(".title", 3, {
-    delay: 8.4,
+    delay: 7.4,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 });
 
 TweenMax.staggerFrom(".description-title", 2, {
-    delay: 8.7,
+    delay: 7.7,
     opacity: 0,
     y: 20,
     ease: Power3.easeInOut
 }, 0.1);
 
 TweenMax.staggerFrom(".btn-modal-video ", 2, {
-    delay: 8.7,
+    delay: 7.7,
     opacity: 0,
     y: 20,
     ease: Power3.easeInOut
 }, 0.1);
 
 TweenMax.staggerFrom(".img-slide", 2, {
-    delay: 8.7,
+    delay: 7.7,
     opacity: 0,
     y: 20,
     ease: Power3.easeInOut
