@@ -75,7 +75,7 @@ setTimeout(() => {
     welcome.style.display = 'flex';
     const circleType = new CircleType(document.getElementById('welcome-title'));
     circleType.radius(384);
-
+    console.log('se creo el radio con texto');
     TweenMax.staggerFrom(".welcome", 3, {
         delay: 8.7,
         opacity: 0,
