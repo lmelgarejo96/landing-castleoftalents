@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href="assets/img/logo.png">
+    <!-- BOOTSTRAP -->
+    <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css integrity=sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh crossorigin=anonymous>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/fazt.css">
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- video js -->
+    <link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet" />
+
+    <!-- AnimeJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- MAIN CSS -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Castillo de talentos</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section id="home">
+            <!-- HEADER -->
+            <header>
+                <nav id="contacto" class="navbar navbar-expand-lg pt-0">
+                    <div id="contenedor-contacto" class="container-fluid p-0">
+                        <div class="item-contacto text-center">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link p-1" href="#" style="font-size: 12px;">Matrícula</a>
+                                </li>
+                                <div class="vl ml-2 mr-2"></div>
+                                <li class="nav-item active">
+                                    <a class="nav-link p-1 btn-icon" href="#" style="font-size: 12px;"><i class="material-icons mr-2" style="font-size: 18px;">settings_phone</i>+51 5555 555</a>
+                                </li>
+                                <div class="vl ml-2 mr-2"></div>
+                                <li id="btn-login" class="nav-item ml-auto">
+                                    <a class="nav-link p-1" href="#" style="font-size: 12px;">Alumnos<i class="fa fa-user ml-2"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <a id="logo-a" href="#" class="logo">
+                    <img src="assets/img/logo.png" alt="img logo">
+                    <!-- <span class="text-muted">V1.0</span> -->
+                </a>
+                <div class="fondo-blanco">
+
+                </div>
+                <nav id="menu" class="navbar navbar-expand-lg navbar-light p-0">
+                    <div id="nav-menu" class="container-fluid nav-menu">
+
+                        <button id="btn-navbar" class="navbar-toggler collapsed ml-auto m-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            Menu
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto mt-auto">
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#">Matrícula</a>
+                                </li>
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#niveles">Niveles</a>
+                                </li>
+                                <li class="nav-item active m-2">
+                                    <a class="nav-link" href="#propuesta-educativa">Propuesta educativa</a>
+                                </li>
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#about">Nosotros</a>
+                                </li>
+                                <li class="nav-item m-2">
+                                    <a class="nav-link" href="#contact">Contactanos</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets/img/boton-invierno.webp" alt="">
+                            </a>
+                        </li> -->
+                                <!-- <li class="nav-item mt-2 mr-2 ">
+                            <form class="form-inline ">
+                                <input class="form-control search" type="search" placeholder="Search..."
+                                    aria-label="Search">
+                                <button class="btn btn-dark" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li> -->
+                                <!-- <li id="phone-number" class="nav-item active">
+                            <a class="nav-link p-2 btn-icon" href="#"><i class="material-icons mr-2" >settings_phone</i>+51 5555 555</a>
+                        </li> -->
+
+                                <li class="nav-item">
+                                    <a class="nav-link ml-2 link-facebook" href="#"><img src="assets/img/fb.png" alt="fb-icon"></a>
+                                </li>
+                                <li id="btn-login2" class="nav-item m-2">
+                                    <a class="nav-link p-2" href="#">Alumnos<i class="fa fa-user ml-2"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slide-item">
+                                <div class="col-lg-4 col-md-8 col-sm-10 description">
+                                    <h1 class="title" id="title">
+                                        <span class="text-wrapper">
+                                                    <span class="letters">The connected world</span>
+                                        </span>
+                                    </h1>
+                                    <p class="description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+                                    <p class="btn-modal-video d-flex align-items-center">
+                                        <a data-toggle="modal" data-target="#videoModal" class="play-btn mr-3">
+                                            <i class="fa fa-play text-white"></i>
+                                        </a>
+                                        <span class="small">Ver video</span>
+                                    </p>
+                                </div>
+
+                                <img src="./assets/slide-img/school.png" class="img-slide" alt="...">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide-item">
+                                <div class="col-lg-4 col-md-8 col-sm-10 description">
+                                    <h1 class="title" id="title">
+                                        <span class="text-wrapper">
+                                                    <span class="letters">Descubre nuestra propuesta de estudio.</span>
+                                        </span>
+                                    </h1>
+                                    <p class="description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+                                    <p class="btn-modal-video d-flex align-items-center">
+                                        <a data-toggle="modal" data-target="#videoModal" class="play-btn mr-3">
+                                            <i class="fa fa-play text-white"></i>
+                                        </a>
+                                        <span class="small">Ver video</span>
+                                    </p>
+                                </div>
+                                <img src="./assets/slide-img/ilustracion.png" class="img-slide" alt="...">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide-item">
+                                <div class="col-lg-4 col-md-8 col-sm-10 description">
+                                    <h1>Descubre nuestra propuesta de estudio.</h1>
+                                    <p class="description-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+                                    <p class="btn-modal-video d-flex align-items-center">
+                                        <a data-toggle="modal" data-target="#videoModal" class="play-btn mr-3">
+                                            <i class="fa fa-play text-white"></i>
+                                        </a>
+                                        <span class="small">Ver video</span>
+                                    </p>
+                                </div>
+                                <img src="./assets/slide-img/ilustracion.png" class="img-slide" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev overlay-bg" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next overlay-bg" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="wave" style="height: 120px; overflow: hidden;">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+                </svg>
+            </div> -->
+            <a href="#home" class="scroll-top" style="display: block; overflow: hidden;">
+                <span class="fa fa-angle-up"></span>
+            </a>
+
+
+            <!-- video Modal -->
+            <div class="modal fade bd-example-modal-lg" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="close-btn" data-dismiss="modal">
+                    X
+                </div>
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+                    <div class="modal-content">
+                        <div class="contenedor-video">
+                            <video id="my-video" class="video-js video" controls>
+                                    <source src="https://storage.googleapis.com/delta-repeater-247102.appspot.com/422ca64f2d02802fed9194863969629d.mp4?rnd=968926473"
+                                        type="video/mp4" />                          
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <!--  <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+
+
+                </div>
+            </div>
+        </section>
+        <section id="niveles">
+
+        </section>
+        <section id="propuesta-educativa">
+
+        </section>
+        <section id="about">
+
+        </section>
+        <section id="contact">
+
+        </section>
+    </div>
+
+
+    <div class="init">
+        <div id="welcome" class="welcome text-center">
+            <h1>Colegio Matemático</h1>
+        </div>
+    </div>
+
+
+
+    <div>
+
+        <div class="loading-screen"></div>
+
+        <div class="loader">
+            <div id="ring" class="ringOne ring">
+                <img src="assets/img/logo.png" class="opacity-img" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/1b27f71126.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="js/scroll.js"></script>
+    <script src="js/tweenMax.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.config.js"></script> -->
+    <div id="social-ads" class="social-container st-sticky-share-buttons">
+        <a href="https://api.whatsapp.com/send?phone=51957786882&text=Me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20colegio." target="_blank" class="st-btn st-third">
+            <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+                <g>
+                   <path d="m25 21.7q0.3 0 2.2 1t2 1.2q0 0.1 0 0.3 0 0.8-0.4 1.7-0.3 0.9-1.6 1.5t-2.2 0.6q-1.3 0-4.3-1.4-2.2-1-3.8-2.6t-3.3-4.2q-1.6-2.3-1.6-4.3v-0.2q0.1-2 1.7-3.5 0.5-0.5 1.2-0.5 0.1 0 0.4 0t0.4 0.1q0.4 0 0.6 0.1t0.3 0.6q0.2 0.5 0.8 2t0.5 1.7q0 0.5-0.8 1.3t-0.7 1q0 0.2 0.1 0.3 0.7 1.7 2.3 3.1 1.2 1.2 3.3 2.2 0.3 0.2 0.5 0.2 0.4 0 1.2-1.1t1.2-1.1z m-4.5 11.9q2.8 0 5.4-1.1t4.5-3 3-4.5 1.1-5.4-1.1-5.5-3-4.5-4.5-2.9-5.4-1.2-5.5 1.2-4.5 2.9-2.9 4.5-1.2 5.5q0 4.5 2.7 8.2l-1.7 5.2 5.4-1.8q3.5 2.4 7.7 2.4z m0-30.9q3.4 0 6.5 1.4t5.4 3.6 3.5 5.3 1.4 6.6-1.4 6.5-3.5 5.3-5.4 3.6-6.5 1.4q-4.4 0-8.2-2.1l-9.3 3 3-9.1q-2.4-3.9-2.4-8.6 0-3.5 1.4-6.6t3.6-5.3 5.3-3.6 6.6-1.4z"></path>
+                </g>
+             </svg>
+        </a>
+        <a href="https://www.facebook.com/pages/category/Education/Castillo-de-Talento-155178005035699/" target="_blank" class="st-btn st-first">
+            <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+               <g>
+                  <path d="m21.7 16.7h5v5h-5v11.6h-5v-11.6h-5v-5h5v-2.1c0-2 0.6-4.5 1.8-5.9 1.3-1.3 2.8-2 4.7-2h3.5v5h-3.5c-0.9 0-1.5 0.6-1.5 1.5v3.5z"></path>
+               </g>
+            </svg>
+        </a>
+        <a href="https://www.messenger.com/t/100010807292451" target="_blank" class="st-btn st-second">
+            <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 50 50">
+               <g>
+                  <path d="M25,2C12.3,2,2,11.6,2,23.5c0,6.3,2.9,12.2,8,16.3v8.8l8.6-4.5c2.1,0.6,4.2,0.8,6.4,0.8c12.7,0,23-9.6,23-21.5 C48,11.6,37.7,2,25,2z M27.3,30.6l-5.8-6.2l-10.8,6.1l12-12.7l5.9,5.9l10.5-5.9L27.3,30.6z"></path>
+               </g>
+            </svg>
+        </a>
+
+        <a href="#" target="_blank" class="st-btn st-last">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;" xml:space="preserve">
+                <g>
+                    <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752   c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407   c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752   c17.455,0,31.656,14.201,31.656,31.655V122.407z" fill="#FFFFFF"/>
+                    <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561   C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561   c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" fill="#FFFFFF"/>
+                    <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78   c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78   C135.661,29.421,132.821,28.251,129.921,28.251z" fill="#FFFFFF"/>
+                </g>
+            </svg>
+
+        </a>
+    </div>
+
+
+</body>
+
+</html>
