@@ -10,3 +10,8 @@ $('#videoModal').on('show.bs.modal', function(e) {
 $('#videoModal').on('hidden.bs.modal', function(e) {
     myPlayer.pause();
 });
+
+/* CircleType */
+
+/* const circleType = new CircleType(document.getElementById('welcome-title'));
+circleType.radius(200); */

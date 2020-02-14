@@ -72,7 +72,9 @@ setTimeout(() => {
 
 setTimeout(() => {
     const welcome = document.getElementById('welcome');
-    welcome.style.display = 'flex'
+    welcome.style.display = 'flex';
+    const circleType = new CircleType(document.getElementById('welcome-title'));
+    circleType.radius(384);
     TweenMax.staggerFrom(".welcome", 3, {
         delay: 8.7,
         opacity: 0,
