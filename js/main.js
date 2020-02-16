@@ -8,25 +8,29 @@
     AOS.init();
 }, 8000); */
 
-var myPlayer = videojs('my-video', {
+/* var myPlayer = videojs('my-video', {
     controls: true,
     autoplay: false,
-});
+}); */
 $('#videoModal').on('show.bs.modal', function(e) {
-    myPlayer.play();
+    /* myPlayer.play(); */
+    console.log('open');
 });
 
 $('#videoModal').on('hidden.bs.modal', function(e) {
-    $('#videoModal').modal('dispose');
+    /* $('#videoModal').modal('dispose'); */
     $('.video').each(function() {
-        $(this).stopVideo();
+        $(this)[0].hidden = true
+            /* console.log($(this)[0].hidden); */
+            /* $(this)[0].stopVideo(); */
     });
+    console.log('pause');
 });
 
-function closeModal() {
+/* function closeModal() {
     console.log('click');
     $('#videoModal').modal('dispose');
-}
+} */
 /* CircleType */
 
 /* const circleType = new CircleType(document.getElementById('welcome-title'));
