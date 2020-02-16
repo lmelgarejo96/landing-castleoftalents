@@ -75,14 +75,14 @@ setTimeout(() => {
     welcome.style.display = 'flex';
     const circleType = new CircleType(document.getElementById('welcome-title'));
     circleType.radius(384);
-    console.log('se creo el radio con texto');
     TweenMax.staggerFrom(".welcome", 3, {
         delay: 8.7,
         opacity: 0,
         y: 20,
         ease: Power3.easeInOut
     }, 0.1);
-}, 3000)
+}, 3000);
+
 
 
 var t1 = new TimelineMax();
@@ -113,7 +113,6 @@ anime.timeline({ loop: false })
         duration: 450,
         easing: "easeOutExpo",
         delay: function(el, i) {
-            console.log(i);
             return 9000 + 50 * i;
         }
     });
