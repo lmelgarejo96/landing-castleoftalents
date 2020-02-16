@@ -17,9 +17,16 @@ $('#videoModal').on('show.bs.modal', function(e) {
 });
 
 $('#videoModal').on('hidden.bs.modal', function(e) {
-    myPlayer.pause();
+    $('#videoModal').modal('dispose');
+    $('.video').each(function() {
+        $(this).stopVideo();
+    });
 });
 
+function closeModal() {
+    console.log('click');
+    $('#videoModal').modal('dispose');
+}
 /* CircleType */
 
 /* const circleType = new CircleType(document.getElementById('welcome-title'));
