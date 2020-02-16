@@ -14,15 +14,17 @@
 }); */
 $('#videoModal').on('show.bs.modal', function(e) {
     /* myPlayer.play(); */
+    $('.video').each(function() {
+        $(this)[0].src = "https://www.youtube-nocookie.com/embed/pxEKoZKpCew";
+    });
     console.log('open');
 });
 
 $('#videoModal').on('hidden.bs.modal', function(e) {
     /* $('#videoModal').modal('dispose'); */
     $('.video').each(function() {
-        $(this)[0].hidden = true
-            /* console.log($(this)[0].hidden); */
-            /* $(this)[0].stopVideo(); */
+        $(this)[0].src = "";
+        console.log($(this));
     });
     console.log('pause');
 });
