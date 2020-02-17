@@ -30,7 +30,9 @@ header {
     background: #fff;
 }
 
-#home {
+#home,
+#contact,
+#about {
     position: relative;
 }
 
@@ -289,11 +291,10 @@ nav {
     transition: all 1.5s ease;
 }
 
-
-/* #nav-menu {
-    border-top: 1px solid #dedfe3;
+#nav-menu {
+    /* border-top: 1px solid #dedfe3; */
     border-bottom: 1px solid #f2f3f5;
-} */
+}
 
 .hamburguer {
     width: 80px;
@@ -412,12 +413,6 @@ nav {
     transform: scale(1)
 }
 
-
-/* .navbar-toggler {
-    color: #000;
-}
- */
-
 @media screen and (max-width: 990px) {
     /* .hamburguer {
         display: block;
@@ -442,7 +437,7 @@ nav {
         clip-path: circle(0.0% at 100% 0);
     }
     .navbar-light .navbar-toggler {
-        border-color: #000;
+        border-color: #fff;
     }
     .dark-navbar .navbar-toggler {
         border-color: #fff;
@@ -451,7 +446,7 @@ nav {
         color: #fff;
     }
     .navbar-light .navbar-toggler i {
-        color: #000;
+        color: #fff;
     }
     .dark-navbar .navbar-toggler i {
         color: #fff;
@@ -497,6 +492,15 @@ nav {
     #contacto {
         display: none;
     }
+    .navbar {
+        /* background: #0f0c29;
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+        background: #563d7c;
+    }
+    .dark-navbar {
+        background: #000000;
+    }
 }
 
 
@@ -504,14 +508,12 @@ nav {
 
 .slider {
     padding-top: 101px;
-    background: #1f2d57;
+    /* background: #1f2d57; */
     min-height: 60vh;
     /* background: #00B4DB;
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
     background: linear-gradient(to right, #0083B0, #00B4DB); */
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: #563d7c;
 }
 
 .slide-item {
@@ -522,9 +524,10 @@ nav {
     /* background: #00B4DB;
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
     background: linear-gradient(to right, #0083B0, #00B4DB); */
-    background: #0f0c29;
+    /*  background: #0f0c29;
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+    background: #563d7c;
     z-index: 30;
     min-height: 60vh;
 }
@@ -559,7 +562,8 @@ nav {
     width: 8%;
 }
 
-.wave {
+.wave,
+#clouds {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -725,7 +729,7 @@ section {
 }
 
 .testimonial_bg_1 {
-    background-image: url(../assets/img/testmonial.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(../assets/img/testmonial.png);
 }
 
 .testimonial_area {
@@ -740,7 +744,7 @@ section {
 .testimonial_area .testmonial_text p {
     font-size: 24px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
     line-height: 34px;
     margin-top: 26px;
@@ -789,7 +793,7 @@ section {
 #about {
     background: #fff;
     padding-top: 110px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
 
 .our_courses .single_course {
@@ -938,9 +942,10 @@ section {
 /* contact */
 
 #contact {
+    /* background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/img/bg.png); */
     background: #fff;
     padding-top: 110px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     overflow: hidden;
 }
 
@@ -955,7 +960,10 @@ section {
 
 .contact_section h2 {
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-weight: 900;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .contact_section p {
@@ -1019,9 +1027,10 @@ section {
 }
 
 .footer {
-    background: url(../assets/img/footer.jpg);
+    /* background: url(../assets/img/footer.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background: rgb(0, 0, 0);
     padding-top: 100px;
     text-align: center;
 }

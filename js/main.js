@@ -43,7 +43,7 @@ document.querySelectorAll(".navbar-toggler")[0].addEventListener("click", functi
         nav_btn.classList.add('fa-close')
         semaforo = true;
     } else {
-        color = "rgb(0, 0, 0)";
+        color = "rgb(255, 255, 255)";
         classesnav.forEach((item) => {
             if (item === 'dark-navbar') {
                 color = "rgb(255, 255, 255)";

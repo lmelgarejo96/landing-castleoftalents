@@ -5,18 +5,18 @@ TweenMax.to(".loading-screen", 4, {
 });
 
 TweenMax.from(".h3-init", 3, {
-    delay: 5,
+    delay: 4.5,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 });
 
-TweenMax.from(".h3-init-t", 3, {
+/* TweenMax.from(".h3-init-t", 3, {
     delay: 4,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
-});
+}); */
 
 /* TweenMax.to(".init", 1, {
     delay: 7.4,
@@ -132,4 +132,4 @@ anime.timeline({ loop: false })
     });
 
 
-gsap.from("#hero", { duration: 2, x: 800, opacity: 0, scale: 0.5 });
+/* gsap.from("#hero", { duration: 2, x: 800, opacity: 0, scale: 0.5 }); */
