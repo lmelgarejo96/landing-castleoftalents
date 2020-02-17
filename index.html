@@ -10,12 +10,17 @@
     <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css integrity=sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh crossorigin=anonymous>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+
     <link rel="stylesheet" href="css/fazt.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
 
     <!-- video js -->
     <link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet" />
@@ -24,7 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!-- DATA AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <!-- MAIN CSS -->
 
@@ -42,15 +47,15 @@
                         <div class="item-contacto text-center">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link p-1" href="#" style="font-size: 12px;">Matrícula</a>
+                                    <a class="nav-link p-1" href="#home" style="font-size: 14px;"><i class="fa fa-home" style="font-size: 18px;"></i></a>
                                 </li>
                                 <div class="vl ml-2 mr-2"></div>
                                 <li class="nav-item active">
-                                    <a class="nav-link p-1 btn-icon" href="#" style="font-size: 12px;"><i class="material-icons mr-2" style="font-size: 18px;">settings_phone</i>01 5555-555</a>
+                                    <a class="nav-link p-1 btn-icon" href="#" style="font-size: 12px;"><i class="material-icons mr-2" style="font-size: 16px;">settings_phone</i>01 5555-555</a>
                                 </li>
                                 <div class="vl ml-2 mr-2"></div>
                                 <li class="nav-item active">
-                                    <a class="nav-link p-1 btn-icon" href="#" style="font-size: 12px;"><i class="material-icons mr-2" style="font-size: 18px;">settings_phone</i>+51922576590</a>
+                                    <a class="nav-link p-1 btn-icon" href="#" style="font-size: 12px;"><i class="material-icons mr-2" style="font-size: 16px;">settings_phone</i>+51922576590</a>
                                 </li>
                                 <div class="vl ml-2 mr-2"></div>
                                 <li id="btn-login" class="nav-item ml-auto">
@@ -83,11 +88,11 @@
                                     <a class="nav-link" href="#propuesta-educativa">Propuesta educativa</a>
                                 </li>
                                 <li class="nav-item m-2">
+                                    <a class="nav-link" href="#testimonios">Test</a>
+                                </li>
+                                <li class="nav-item m-2">
                                     <a class="nav-link" href="#about">Nosotros</a>
                                 </li>
-                                <!-- <li class="nav-item m-2">
-                                    <a class="nav-link" href="#blog">Blog</a>
-                                </li> -->
                                 <li class="nav-item m-2">
                                     <a class="nav-link" href="#contact">Contactanos</a>
                                 </li>
@@ -216,6 +221,48 @@
         </section>
         <section id="propuesta-educativa">
 
+        </section>
+        <section id="testimonios">
+            <div class="testimonial_area testimonial_bg_1 overlay">
+                <div class="testmonial_active owl-carousel">
+                    <div class="single_testmonial">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="testmonial_text text-center">
+                                        <div class="author_img">
+                                            <img src="assets/img/tomiuka2.jpg" alt="">
+                                        </div>
+                                        <p>
+                                            "Working in conjunction with humanitarian aid <br> agencies we have supported programmes to <br> alleviate. human suffering.
+
+                                        </p>
+                                        <span>- Jquileen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_testmonial">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="testmonial_text text-center">
+                                        <div class="author_img">
+                                            <img src="assets/img/tomiuka2.jpg" alt="">
+                                        </div>
+                                        <p>
+                                            "Working in conjunction with humanitarian aid <br> agencies we have supported programmes to <br> alleviate. human suffering.
+
+                                        </p>
+                                        <span>- Jquileen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="about">
             <div class="our_courses">
@@ -524,22 +571,28 @@
     <div class="init">
         <div id="welcome" class="welcome text-center ">
             <h1 id="welcome-title">Colegio Matemático</h1>
+            <h3 class="h3-init-t">Welcome</h3>
         </div>
+        <img id="hero" src="assets/img/lion.png" />
     </div>
     <div>
         <div class="loading-screen"></div>
 
         <div class="loader">
+
             <div id="ring" class="ringOne ring">
                 <img src="assets/img/logo.png" class="opacity-img" alt="logo">
+                <h3 class="h3-init">E = mc<sup>2</sup></h3>
             </div>
+
         </div>
     </div>
 
     <script src="https://vjs.zencdn.net/7.5.5/video.js "></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js " integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js " integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script> -->
     <script src="https://use.fontawesome.com/1b27f71126.js "></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -549,6 +602,7 @@
     <script src="js/CircleType.min.js "></script>
     <script src="js/scroll.js "></script>
     <script src="js/tweenMax.js "></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js "></script>
     <!-- <script src="js/swiper.min.js "></script>
     <script src="js/swiper.config.js "></script> -->

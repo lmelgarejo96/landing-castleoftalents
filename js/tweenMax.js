@@ -4,6 +4,20 @@ TweenMax.to(".loading-screen", 4, {
     ease: Expo.easeInOut
 });
 
+TweenMax.from(".h3-init", 3, {
+    delay: 5,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+});
+
+TweenMax.from(".h3-init-t", 3, {
+    delay: 4,
+    opacity: 0,
+    y: 20,
+    ease: Expo.easeInOut
+});
+
 /* TweenMax.to(".init", 1, {
     delay: 7.4,
     opacity: 0,
@@ -38,7 +52,7 @@ TweenMax.from(".nav-link", 3, {
 });
 
 TweenMax.from(".title", 3, {
-    delay: 7.4,
+    delay: 7,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
@@ -116,3 +130,6 @@ anime.timeline({ loop: false })
             return 9000 + 50 * i;
         }
     });
+
+
+gsap.from("#hero", { duration: 2, x: 800, opacity: 0, scale: 0.5 });

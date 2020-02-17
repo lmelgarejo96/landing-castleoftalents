@@ -70,9 +70,8 @@ nav {
     width: 100%;
     height: 200vh;
     /* background: #0a0a0a; */
-    background: #0083B0;
-    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-    background: linear-gradient(to right, #0083B0, #00B4DB);
+    background: #000;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 210;
 }
 
@@ -101,6 +100,7 @@ nav {
     position: absolute;
     /* display: flex; */
     justify-content: center;
+    flex-flow: column nowrap;
     align-items: center;
     z-index: 250;
     width: 50%;
@@ -112,6 +112,35 @@ nav {
 .ring img {
     max-width: 180px;
     text-shadow: -1px 1px 0 #000, -1px 1px 0 #0a0e27;
+}
+
+.ring h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+    font-family: 'Lemonada', cursive, monospace, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: -1px 1px 0 #000, -1px 1px 0 #0a0e27;
+    z-index: 10;
+}
+
+.welcome h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 1;
+    font-weight: 500;
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: -2px 2px 0 #000, -2px 2px 0 #0a0e27;
+    z-index: 10;
+}
+
+#hero {
+    position: absolute;
+    max-width: 350px;
+    max-height: 400px;
+    height: 200px;
+    width: auto;
+    bottom: 0;
 }
 
 
@@ -131,7 +160,7 @@ nav {
     width: 100%;
     height: 65vh;
     /* display: flex; */
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     z-index: 250;
@@ -145,6 +174,7 @@ nav {
     font-weight: 900;
     font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
     text-shadow: -4px 4px 0 #000, -4px 4px 0 #0a0e27;
+    z-index: 10;
 }
 
 @keyframes rotateFirstRing {
@@ -162,6 +192,11 @@ nav {
         font-weight: 500;
         text-shadow: -2px 2px 0 #000, -2px 2px 0 #0a0e27;
     }
+    .ring h3,
+    .welcome h3 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 }
 
 
@@ -169,9 +204,7 @@ nav {
 
 .item-contacto {
     max-width: 700px;
-    background: #0083B0;
-    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-    background: linear-gradient(to right, #0083B0, #00B4DB);
+    background: #EB5757;
     margin-left: auto;
     padding: 5px;
 }
@@ -183,24 +216,27 @@ nav {
 
 #contacto.navbar ul li a {
     color: #fff;
+    font-family: monospace;
+    text-transform: none;
 }
 
 #contacto.navbar ul li a:before {
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
-    transform-origin: 0 100%
+    border-bottom: none;
+    border-left: none;
+    /* transform-origin: */
 }
 
 #contacto.navbar ul li a:after {
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform-origin: 100% 0%
+    border-top: none;
+    border-right: none;
+    /* transform-origin: 100% 0% */
 }
 
-#contacto.navbar ul li a:hover:after,
+
+/* #contacto.navbar ul li a:hover:after,
 #contacto.navbar ul li a:hover:before {
     transform: scale(1)
-}
+} */
 
 .btn-icon {
     display: flex;
@@ -348,9 +384,9 @@ nav {
 }
 
 .dark-navbar {
-    background: #0F2027;
-    /*  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+    background: #002;
+    /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
     color: #fff;
     transition: all 1.5s ease;
 }
@@ -470,9 +506,12 @@ nav {
     padding-top: 101px;
     background: #1f2d57;
     min-height: 60vh;
-    background: #00B4DB;
+    /* background: #00B4DB;
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-    background: linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, #0083B0, #00B4DB); */
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 
 .slide-item {
@@ -480,9 +519,12 @@ nav {
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
-    background: #00B4DB;
+    /* background: #00B4DB;
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
-    background: linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, #0083B0, #00B4DB); */
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     z-index: 30;
     min-height: 60vh;
 }
@@ -668,6 +710,71 @@ section {
 #niveles,
 #about {
     background: #fafafa;
+}
+
+
+/* TESTIMONIALS */
+
+#testimonios {
+    min-height: 100vh;
+    /* margin-top: 200px;
+    margin-bottom: 50px; */
+    padding-top: 180px;
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+.testimonial_bg_1 {
+    background-image: url(../assets/img/testmonial.png);
+}
+
+.testimonial_area {
+    position: relative;
+    z-index: 0;
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.testimonial_area .testmonial_text p {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 34px;
+    margin-top: 26px;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 767px) {
+    .testimonial_area .testmonial_text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial_area .testmonial_text p br {
+        display: none;
+    }
+}
+
+.testimonial_area .testmonial_text span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.testimonial_area .owl-carousel .owl-item img {
+    display: inline-block;
+    width: auto;
+    margin: auto;
+}
+
+.author_img img {
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 50%;
 }
 
 

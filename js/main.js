@@ -29,14 +29,6 @@ $('#videoModal').on('hidden.bs.modal', function(e) {
     console.log('pause');
 });
 
-/* function closeModal() {
-    console.log('click');
-    $('#videoModal').modal('dispose');
-} */
-/* CircleType */
-
-/* const circleType = new CircleType(document.getElementById('welcome-title'));
-circleType.radius(200); */
 
 
 var enlacesHeader = document.querySelectorAll(".navbar-collapse")[0];
@@ -98,3 +90,50 @@ function prepareLinks() {
     }
 }
 prepareLinks();
+
+
+/* testimonios */
+let owl = $('.testmonial_active');
+owl.owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 1,
+    autoplay: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    nav: true,
+    dots: false,
+    autoplayHoverPause: true,
+    autoplaySpeed: 800,
+    responsive: {
+        0: {
+            items: 1,
+            dots: false,
+            nav: false,
+        },
+        767: {
+            items: 1,
+            dots: false,
+            nav: false,
+        },
+        992: {
+            items: 1,
+            nav: false
+        },
+        1200: {
+            items: 1,
+            nav: false
+        },
+        1500: {
+            items: 1
+        }
+    }
+});
+
+/* owl.on('mousewheel', '.owl-stage', function(e) {
+    if (e.deltaY > 0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+}); */
